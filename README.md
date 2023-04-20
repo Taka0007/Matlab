@@ -1,2 +1,2 @@
 # Matlab
-Matlab repository
+Matlab の拡張子は「.m」
