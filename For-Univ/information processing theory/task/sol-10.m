@@ -11,9 +11,8 @@ fplot(prob8,range)
 
 
 % 問9 定積分の計算
-
-
-
+prob9 = @(x) (1/(sqrt(2*pi))) .* exp(-x.^2/2);
+integral(prob9,-inf,inf)
 
 
 % 問10 謎の関数の計算
