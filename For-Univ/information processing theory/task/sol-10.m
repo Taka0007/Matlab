@@ -5,7 +5,6 @@
 % y = \frac{1}{\sqrt{2\pi}} \cdot e^{-\frac{x^2}{2}}
 
 prob8 = @(x) ((1/(2*pi)) .* exp(-x.^2/2));
-
 range = [-5,5];
 fplot(prob8,range)
 
@@ -16,7 +15,8 @@ integral(prob9,-inf,inf)
 
 
 % 問10 謎の関数の計算
-
+lamda = 4
+prob10 = @(x) (lamda^k)
 
 
 
