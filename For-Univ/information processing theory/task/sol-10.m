@@ -1,4 +1,3 @@
-
 % 問8 グラフの描写
 
 % ガウス分布のグラフをプロット
@@ -14,17 +13,15 @@ prob9 = @(x) (1/(sqrt(2*pi))) .* exp(-x.^2/2);
 integral(prob9,-inf,inf)
 
 
-% 問10 謎の関数の計算
-lamda = 4
-prob10 = @(x) (lamda^k)
-
-
+% 問10 ポアソン分布の計算
+lamda   = 4;
+prob10  = @(k) (lamda.^k)*(exp(-lamda)) ./ factorial(k);
+range10 = 1:1:20;
+Ans10   = prob10(range10)
 
 
 % 問11 問10のものをプロットする
-
-
-
+plot(range10,Ans10)
 
 
 % 問12 csvに含まれるデータのプロット
@@ -37,4 +34,6 @@ prob10 = @(x) (lamda^k)
 
 % 問14 制約あり最適化問題(簡単ver)
 
+% 目的関数
+% xが定まるとyも一意に定まるので
 
