@@ -42,7 +42,16 @@ ans =
 
 
 % 問4 逆行列(少し複雑ver)
-
+alfa  = pi/4;
+beta  = pi/6;
+gamma = pi/3;
+vec4  = [cos(alfa)*cos(beta)*cos(gamma)-sin(alfa)*sin(gamma) -cos(alfa)*cos(beta)*sin(gamma)-sin(alfa)*cos(gamma) cos(alfa)*sin(beta);
+        sin(alfa)*cos(beta)*cos(gamma)+cos(alfa)*sin(gamma) -sin(alfa)*cos(beta)*sin(gamma)+cos(alfa)*cos(gamma) sin(alfa)*sin(beta);
+        -sin(beta)*cos(gamma) sin(beta)*sin(gamma) cos(beta)];
+disp('行列')
+disp(vec4);
+Ans4  = inv(vec4);
+vec4 * Ans4
 
 
 
