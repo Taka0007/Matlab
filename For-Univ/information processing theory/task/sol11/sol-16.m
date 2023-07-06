@@ -13,9 +13,21 @@ c = coeff(3);
 % 方程式の解
 Ans1 = (-b + sqrt(b^2-4*a*c)) / (2*a);
 Ans2 = (-b - sqrt(b^2-4*a*c)) / (2*a);
-disp('解答');
+
+if b^2-4*a*c > 0
+disp('方程式は相異なる2つの実数解をもつ');
 disp(Ans1);
 disp(Ans2);
+
+elseif b^2-4*a*c == 0
+disp('方程式は重解を持つ');
+disp(Ans1);
+
+else
+disp('方程式は相異なる2つの虚数解をもつ');
+disp(Ans1);
+disp(Ans2);
+end
 
 % 検算用
 disp('検算用');
