@@ -25,7 +25,8 @@ plot(range10,Ans10)
 
 
 % 問12 csvに含まれるデータのプロット
-format shortEng 
+format shortEng
+
 
 
 % 問13 線形計画
