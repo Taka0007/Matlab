@@ -13,13 +13,18 @@ format shortEng
 
 Ans = (vec - mean(vec)) ./ (std(vec));
 disp('解答');
+disp('平均が0、標準偏差が1になれば正しい');
+disp('平均');
 disp(mean(Ans));
+disp('標準偏差');
 disp(std(Ans));
 
 % ----------------
 % 検算用
 
 disp('検算用');
+disp('平均');
 disp(mean(zscore(vec)));
+disp('標準偏差');
 disp(std(zscore(vec)));
 % -------------------
