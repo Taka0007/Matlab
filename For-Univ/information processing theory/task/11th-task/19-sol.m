@@ -19,7 +19,7 @@ SUM = 0;
 for i = 1:n
     SUM = SUM + (A(i)-mean(A))*(B(i)-mean(B));
 end
-covariance = (SUM/n) 
+covariance = (SUM/n);
 
 % 相関係数の導出
 correlation_coefficient = covariance / (std(A)*std(B));
