@@ -21,7 +21,6 @@ disp(std(Ans));
 
 % ----------------
 % 検算用
-
 disp('検算用');
 disp('平均');
 disp(mean(zscore(vec)));
